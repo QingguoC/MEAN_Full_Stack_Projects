@@ -8,25 +8,25 @@
     <body ng-app="myModule">
 		
 		<table ng-controller = "myController" class="table table-striped">
-		  <thead>
-		    <tr>
-		      <th scope="col">name</th>
-		      <th scope="col">likes</th>
-		      <th scope="col">dislikes</th>
-		      <th scope="col">like/dislike</th>
-		    </tr>
-		  </thead>
-		  <tbody>
-		    <tr ng-repeat = "tech in techs">
-		      <td>{{tech.name}}</td>
-		      <td>{{tech.likes}}</td>
-		      <td>{{tech.dislikes}}</td>
-		      <td>
-		      	<button class="btn btn-success" ng-click="addLikes(tech)">like</button>
-				<button class="btn btn-danger" ng-click="addDisLikes(tech)">dislike</button>
-			</td>
-		    </tr>
-		  </tbody>
+			<thead>
+				<tr>
+					<th scope="col">name</th>
+					<th scope="col">likes</th>
+					<th scope="col">dislikes</th>
+					<th scope="col">like/dislike</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat = "tech in techs">
+					<td>{{tech.name}}</td>
+					<td>{{tech.likes}}</td>
+					<td>{{tech.dislikes}}</td>
+					<td>
+						<button class="btn btn-success" ng-click="addLikes(tech)">like</button>
+						<button class="btn btn-danger" ng-click="addDisLikes(tech)">dislike</button>
+					</td>
+				</tr>
+			</tbody>
 		</table>
     </body>
 </html>
