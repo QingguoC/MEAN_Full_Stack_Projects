@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>ng-click</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script type="text/javascript" src="Scripts/angular.js"></script>
+        <script type="text/javascript" src="Scripts/ngclick.js"></script>
+    </head>
+    <body ng-app="myModule">
+		
+		<table ng-controller = "myController" class="table table-striped">
+		  <thead>
+		    <tr>
+		      <th scope="col">name</th>
+		      <th scope="col">likes</th>
+		      <th scope="col">dislikes</th>
+		      <th scope="col">like/dislike</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr ng-repeat = "tech in techs">
+		      <td>{{tech.name}}</td>
+		      <td>{{tech.likes}}</td>
+		      <td>{{tech.dislikes}}</td>
+		      <td>
+		      	<button class="btn btn-success" ng-click="addLikes(tech)">like</button>
+				<button class="btn btn-danger" ng-click="addDisLikes(tech)">dislike</button>
+			</td>
+		    </tr>
+		  </tbody>
+		</table>
+    </body>
+</html>
