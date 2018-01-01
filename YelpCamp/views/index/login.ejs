@@ -1,0 +1,18 @@
+<% include ../partials/header%>
+<div class="container forms">
+    <h1>YelpCamp Login</h1>
+    <form action="/login" method="POST">
+        <div class="form-group">
+            <label >Username</label>
+            <input type="text" class="form-control" name="username" placeholder="Enter username">
+        </div>
+        <div class="form-group">
+            <label >Password</label>
+            <input type="password" class="form-control" name="password" placeholder="Enter password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg float-right ">login</button>
+    </form>
+</div>
+
+
+<% include ../partials/footer%>

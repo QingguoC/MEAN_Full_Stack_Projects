@@ -18,9 +18,9 @@
 			</thead>
 			<tbody>
 				<tr ng-repeat = "tech in techs">
-					<td>{{tech.name}}</td>
-					<td>{{tech.likes}}</td>
-					<td>{{tech.dislikes}}</td>
+					<td ng-bind="tech.name"></td>
+					<td ng-bind="tech.likes"></td>
+					<td ng-bind="tech.dislikes"></td>
 					<td>
 						<button class="btn btn-success" ng-click="addLikes(tech)">like</button>
 						<button class="btn btn-danger" ng-click="addDisLikes(tech)">dislike</button>

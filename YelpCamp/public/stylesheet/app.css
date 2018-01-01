@@ -1,0 +1,21 @@
+body {
+  padding-top: 5rem;
+}
+.container.main {
+  margin-top: 3.0em;
+  text-align: center;
+}
+#search {
+  width:60%;
+  padding-left:5rem;
+}
+.container.forms{
+  width:30%;
+}
+.form-inline{
+  display:inline;
+}
+
+.img-fluid{
+  width:100%;
+}
