@@ -1,0 +1,98 @@
+h1:hover {
+	background-color: pink;
+}
+
+#btn1:hover {
+	color:white;
+}
+
+.hover-lg-p:hover {
+	font-size: 150%;
+}
+
+input:focus {
+	background-color: yellow;
+}
+
+btn1:focus {
+	border-radius: 10px;
+	background-color: teal;
+}
+
+btn1:active {
+	background-color: orange;
+	font-size: 30px;
+}
+
+.press-btn {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	background-color: #fcad26;
+	font-size: 16px;
+	font-weight: 300px;
+	color:white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 25px 80px;
+	margin:0 auto;
+	border-radius: 20px;
+	box-shadow: 0 6px #efa424;
+}
+
+.press-btn:hover {
+	box-shadow: 0 4px #efa424;
+	top:2px;
+}
+
+.press-btn:active {
+	box-shadow: none;
+	top:6px;
+}
+
+.box-p {
+	width: 50px;
+	height: 50px;
+	background-color: #e74c3c;
+	color:#ecf0f1;
+	border: 2px solid #6c3e50;
+}
+
+.box-p:hover {
+	background-color: #abf0f1;
+	transform-origin: top left;
+	transform:scale(2) translateX(120px);
+	border-radius: 20px;
+}
+.transformed-p-demo {
+	background-color: #9b59b6;
+	transform: rotate(45deg) scale(0.5);
+
+	transform-origin: top right;
+}
+
+.animated-p {
+	transition-property: background-color, border-radius,transform;
+	transition-duration: 0.3s, 0.5s, 0.5s;
+	transition-delay: 0.3s, 0.5s, 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.ball-p {
+	width: 10px;
+	height: 10px;
+	background-color: #e74c3c;
+	color:#ecf0f1;
+	border: 2px solid #6c3e50;
+	border-radius: 50px;
+}
+.ball-p:hover	{
+	transform:translateX(300px) translateY(300px);
+
+}
+
+.animated-ball {
+	transition: all 1s ease-in;
+}
